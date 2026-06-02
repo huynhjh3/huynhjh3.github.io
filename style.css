@@ -163,13 +163,21 @@ footer {
     .project-grid {
         grid-template-columns: 1fr;
     }
-}
 .profile-pic {
-    width: 180px;
-    height: 180px;
+    width: 180px !important;
+    height: 180px !important;
+    max-width: 180px !important;
+    max-height: 180px !important;
+    min-width: 180px !important;
+    min-height: 180px !important;
+
+    display: block;
+    margin: 0 auto 25px auto;
+
     border-radius: 50%;
     object-fit: cover;
+    object-position: center;
+
     border: 4px solid white;
-    margin-bottom: 25px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
