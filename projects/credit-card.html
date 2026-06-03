@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Approval Prediction | Justin Huynh</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="credit-card-page">
+
+<header class="hero">
+  <div class="hero-content">
+    <p class="badge">Machine Learning Case Study</p>
+
+    <h1>Credit Card Approval Prediction</h1>
+
+    <h2>Classification Modeling | Risk Segmentation | Business Analytics</h2>
+
+    <p>
+      Built a predictive analytics workflow to understand what drives credit card approval decisions,
+      evaluate applicant risk patterns, and compare the tradeoff between model interpretability and predictive power.
+    </p>
+
+    <div class="buttons">
+      <a href="../index.html">Back to Portfolio</a>
+      <a href="https://github.com/huynhjh3" target="_blank">View GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <p class="section-label">Business Problem</p>
+  <h2>Understanding Approval Risk</h2>
+
+  <div class="experience">
+    <p>
+      Financial institutions must balance growth and risk when reviewing credit card applications. Approving high-risk applicants can increase default exposure, while rejecting qualified applicants can limit customer acquisition and revenue opportunities.
+    </p>
+
+    <p>
+      This project analyzed applicant demographic, employment, financial, and credit-history variables to identify which factors were most strongly associated with approval outcomes. The goal was to support a more data-driven approval strategy by combining exploratory analysis, segmentation, and classification modeling.
+    </p>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Data Analysis</p>
+  <h2>Building a Reliable Modeling Foundation</h2>
+
+  <div class="project-grid">
+    <div class="card metric">
+      <h3>690</h3>
+      <p>
+        Applicant records analyzed across 16 variables after cleaning and preprocessing.
+      </p>
+    </div>
+
+    <div class="card metric">
+      <h3>44.5%</h3>
+      <p>
+        Approval rate in the target variable, creating a manageable class imbalance for classification modeling.
+      </p>
+    </div>
+
+    <div class="card metric">
+      <h3>55.5%</h3>
+      <p>
+        Denial rate, meaning accuracy alone could be misleading without careful model evaluation.
+      </p>
+    </div>
+
+    <div class="card metric">
+      <h3>16</h3>
+      <p>
+        Applicant features reviewed across demographic, financial, employment, and credit-history categories.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Insights</p>
+  <h2>What the Data Revealed</h2>
+
+  <div class="project-grid">
+    <div class="card">
+      <h3>Prior Default Was the Strongest Signal</h3>
+      <p>
+        Prior default history showed the strongest relationship with approval outcomes, making it the clearest risk segmentation variable in the analysis.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Employment Stability Mattered</h3>
+      <p>
+        Employment status and years employed showed meaningful relationships with approval probability, suggesting that financial stability played an important role in approval decisions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Income Needed Transformation</h3>
+      <p>
+        Income showed strong right-skewness, meaning transformation or nonlinear modeling approaches were needed before relying on it as a clean predictor.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Demographics Required Caution</h3>
+      <p>
+        Demographic variables showed some predictive signal, but financial and credit-history variables provided stronger and more interpretable business value.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Slide Deck Examples</p>
+  <h2>Selected Analysis Outputs</h2>
+
+  <div class="project-grid">
+    <div class="card">
+      <h3>Target Variable Analysis</h3>
+      <img src="credit-card-assets/approval-distribution.png" alt="Credit card approval distribution slide">
+    </div>
+
+    <div class="card">
+      <h3>Distribution Analysis</h3>
+      <img src="credit-card-assets/income-age-distribution.png" alt="Income and age distribution analysis slide">
+    </div>
+
+    <div class="card">
+      <h3>Correlation Analysis</h3>
+      <img src="credit-card-assets/correlation-analysis.png" alt="Correlation analysis slide">
+    </div>
+
+    <div class="card">
+      <h3>Prior Default Segmentation</h3>
+      <img src="credit-card-assets/prior-default-segmentation.png" alt="Prior default segmentation slide">
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Modeling</p>
+  <h2>From Analysis to Prediction</h2>
+
+  <div class="project-grid">
+    <div class="card">
+      <h3>Feature Preparation</h3>
+      <p>
+        Reviewed skewed variables, zero-heavy credit score patterns, and redundant predictors before modeling to reduce noise and improve interpretability.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Classification Strategy</h3>
+      <p>
+        Evaluated approval prediction as a classification problem, where the model needed to distinguish approved and denied applicants while accounting for class distribution.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Interpretability Tradeoff</h3>
+      <p>
+        Compared modeling approaches with the goal of balancing predictive performance against the ability to explain approval drivers to business stakeholders.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Segmentation Logic</h3>
+      <p>
+        Used credit history, employment stability, and financial risk indicators to identify applicant groups with different approval likelihoods.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Business Value</p>
+  <h2>Key Takeaways</h2>
+
+  <div class="project-grid">
+    <div class="card">
+      <h3>Risk-Based Decision Support</h3>
+      <p>
+        The analysis helped identify which applicant characteristics were most useful for separating lower-risk and higher-risk approval profiles.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Better Model Inputs</h3>
+      <p>
+        Data quality checks and feature analysis helped determine which variables required transformation, removal, or deeper review before modeling.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Actionable Segmentation</h3>
+      <p>
+        Prior default history, employment stability, and credit score patterns provided practical segmentation logic for applicant evaluation.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Business-Friendly Modeling</h3>
+      <p>
+        The project emphasized not just model accuracy, but whether results could be interpreted and used in real approval strategy discussions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Tools Used</p>
+  <h2>Technical Toolkit</h2>
+
+  <div class="skills">
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>NumPy</span>
+    <span>Scikit-Learn</span>
+    <span>Classification Modeling</span>
+    <span>EDA</span>
+    <span>Feature Engineering</span>
+    <span>Statistical Analysis</span>
+    <span>Data Visualization</span>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Justin Huynh | Credit Card Approval Case Study</p>
+</footer>
+
+</body>
+</html>
