@@ -384,3 +384,50 @@ footer {
 #kaiser-page .card:hover {
     border-top-color: #0f172a;
 }
+/* HOMEPAGE VALUE SECTION */
+
+.value-section {
+    background: #020617;
+    color: white;
+}
+
+.value-section h2 {
+    color: white;
+}
+
+.value-section .section-label {
+    color: #93c5fd;
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 18px;
+    padding: 28px;
+    min-height: 220px;
+}
+
+.value-card h3 {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+@media (max-width: 900px) {
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+}
