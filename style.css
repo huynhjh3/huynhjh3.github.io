@@ -491,3 +491,23 @@ footer {
 #credit-card-page .card:hover {
     border-top-color: #0f172a;
 }
+/* CASE STUDY IMAGES */
+
+.case-study-image {
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 30px auto 15px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.image-caption {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
