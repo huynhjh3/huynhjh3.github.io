@@ -386,19 +386,6 @@ footer {
 }
 /* HOMEPAGE VALUE SECTION */
 
-.value-section {
-    background: #020617;
-    color: white;
-}
-
-.value-section h2 {
-    color: white;
-}
-
-.value-section .section-label {
-    color: #93c5fd;
-}
-
 .value-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -408,21 +395,28 @@ footer {
 }
 
 .value-card {
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.16);
+    background: white;
+    border: 1px solid #e5e7eb;
     border-radius: 18px;
     padding: 28px;
     min-height: 220px;
+    box-shadow: 0 10px 28px rgba(15,23,42,0.08);
+    transition: 0.25s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(15,23,42,0.14);
 }
 
 .value-card h3 {
-    color: white;
+    color: #0f172a;
     font-size: 21px;
     margin-bottom: 12px;
 }
 
 .value-card p {
-    color: #cbd5e1;
+    color: #475569;
     font-size: 15px;
 }
 
