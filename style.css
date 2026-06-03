@@ -340,3 +340,47 @@ footer {
         padding: 55px 8%;
     }
 }
+/* KAISER CASE STUDY VISUAL POLISH */
+
+#kaiser-page section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+#kaiser-page .project-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    gap: 22px;
+}
+
+#kaiser-page .card {
+    border-top: 5px solid #2563eb;
+    min-height: 260px;
+}
+
+#kaiser-page .metric h3 {
+    font-size: 34px;
+    line-height: 1.2;
+    color: #0b1f4d;
+}
+
+#kaiser-page .metric p {
+    font-size: 16px;
+}
+
+#kaiser-page .experience {
+    border-left: 6px solid #2563eb;
+    max-width: 850px;
+}
+
+#kaiser-page .section-label {
+    margin-bottom: 6px;
+}
+
+#kaiser-page section h2 {
+    margin-bottom: 28px;
+}
+
+#kaiser-page .card:hover {
+    border-top-color: #0f172a;
+}
