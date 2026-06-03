@@ -519,3 +519,55 @@ footer {
     font-size: 17px;
     line-height: 1.7;
 }
+/* WAYMO CASE STUDY VISUAL POLISH */
+
+#waymo-page section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+#waymo-page .project-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    gap: 22px;
+}
+
+#waymo-page .card {
+    border-top: 5px solid #7c3aed;
+    min-height: 260px;
+}
+
+#waymo-page .card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 1px solid #e5e7eb;
+}
+
+#waymo-page .metric h3 {
+    font-size: 38px;
+    line-height: 1.2;
+    color: #5b21b6;
+}
+
+#waymo-page .metric p {
+    font-size: 16px;
+}
+
+#waymo-page .experience {
+    border-left: 6px solid #7c3aed;
+    max-width: 850px;
+}
+
+#waymo-page .section-label {
+    color: #7c3aed;
+    margin-bottom: 6px;
+}
+
+#waymo-page section h2 {
+    margin-bottom: 28px;
+}
+
+#waymo-page .card:hover {
+    border-top-color: #0f172a;
+}
