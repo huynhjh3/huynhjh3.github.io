@@ -168,7 +168,20 @@ footer {
     padding: 30px;
     margin-top: 40px;
 }
-
+.profile-pic {
+    width: 180px !important;
+    height: 180px !important;
+    max-width: 180px !important;
+    max-height: 180px !important;
+    min-width: 180px !important;
+    min-height: 180px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+    border: 4px solid white !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
 @media (max-width: 768px) {
     .hero {
         padding: 60px 8%;
