@@ -12,14 +12,11 @@
 <header class="hero">
   <div class="hero-content">
     <p class="badge">Machine Learning Case Study</p>
-
     <h1>Credit Card Approval Prediction</h1>
-
     <h2>Classification Modeling | Risk Segmentation | Business Analytics</h2>
-
     <p>
-      Built a predictive analytics workflow to understand what drives credit card approval decisions,
-      evaluate applicant risk patterns, and compare the tradeoff between model interpretability and predictive power.
+      Built a predictive analytics workflow to identify what drives credit card approval,
+      compare model performance, and translate applicant data into business-ready lending insights.
     </p>
 
     <div class="buttons">
@@ -31,84 +28,111 @@
 
 <section>
   <p class="section-label">Business Problem</p>
-  <h2>Understanding Approval Risk</h2>
+  <h2>Can Applicant Data Predict Credit Approval?</h2>
 
   <div class="experience">
     <p>
-      Financial institutions must balance growth and risk when reviewing credit card applications. Approving high-risk applicants can increase default exposure, while rejecting qualified applicants can limit customer acquisition and revenue opportunities.
+      Credit approval decisions affect both customer access and financial risk. Banks need to approve qualified applicants while avoiding unnecessary exposure from applicants who may be more likely to default.
     </p>
 
     <p>
-      This project analyzed applicant demographic, employment, financial, and credit-history variables to identify which factors were most strongly associated with approval outcomes. The goal was to support a more data-driven approval strategy by combining exploratory analysis, segmentation, and classification modeling.
+      This project evaluated whether applicant financial characteristics, employment history, bank relationship, and credit behavior could predict credit card approval outcomes. The goal was not only to build an accurate model, but also to understand which variables actually explained approval decisions.
     </p>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Dataset</p>
+  <h2>Data Foundation</h2>
+
+  <div class="project-grid">
+    <div class="card metric">
+      <h3>690</h3>
+      <p>Credit card applications analyzed.</p>
+    </div>
+
+    <div class="card metric">
+      <h3>15</h3>
+      <p>Applicant variables reviewed across financial, employment, demographic, and bank relationship categories.</p>
+    </div>
+
+    <div class="card metric">
+      <h3>0</h3>
+      <p>Missing values after data review.</p>
+    </div>
+
+    <div class="card metric">
+      <h3>44.5%</h3>
+      <p>Approval rate, creating a manageable class balance for modeling.</p>
+    </div>
   </div>
 </section>
 
 <section>
   <p class="section-label">Data Analysis</p>
-  <h2>Building a Reliable Modeling Foundation</h2>
+  <h2>What We Checked Before Modeling</h2>
 
   <div class="project-grid">
-    <div class="card metric">
-      <h3>690</h3>
+    <div class="card">
+      <h3>Target Balance</h3>
       <p>
-        Applicant records analyzed across 16 variables after cleaning and preprocessing.
+        Approval outcomes were fairly balanced, with 44.5% approved and 55.5% denied. This meant the model could learn both classes without heavy resampling.
       </p>
     </div>
 
-    <div class="card metric">
-      <h3>44.5%</h3>
+    <div class="card">
+      <h3>Feature Quality</h3>
       <p>
-        Approval rate in the target variable, creating a manageable class imbalance for classification modeling.
+        Income and debt showed skewed distributions, so transformations were considered to reduce the impact of extreme values.
       </p>
     </div>
 
-    <div class="card metric">
-      <h3>55.5%</h3>
+    <div class="card">
+      <h3>Predictor Screening</h3>
       <p>
-        Denial rate, meaning accuracy alone could be misleading without careful model evaluation.
+        Correlation analysis identified prior default, employment status, credit score, and years employed as the strongest approval signals.
       </p>
     </div>
 
-    <div class="card metric">
-      <h3>16</h3>
+    <div class="card">
+      <h3>Feature Removal</h3>
       <p>
-        Applicant features reviewed across demographic, financial, employment, and credit-history categories.
+        Age, marital status, citizenship status, gender, and driver’s license status were removed due to multicollinearity, redundancy, or low predictive value.
       </p>
     </div>
   </div>
 </section>
 
 <section>
-  <p class="section-label">Insights</p>
+  <p class="section-label">Key Findings</p>
   <h2>What the Data Revealed</h2>
 
   <div class="project-grid">
-    <div class="card">
-      <h3>Prior Default Was the Strongest Signal</h3>
+    <div class="card metric">
+      <h3>0.72</h3>
       <p>
-        Prior default history showed the strongest relationship with approval outcomes, making it the clearest risk segmentation variable in the analysis.
+        Prior default history had the strongest relationship with approval outcomes, making it the clearest risk indicator.
       </p>
     </div>
 
-    <div class="card">
-      <h3>Employment Stability Mattered</h3>
+    <div class="card metric">
+      <h3>0.46</h3>
       <p>
-        Employment status and years employed showed meaningful relationships with approval probability, suggesting that financial stability played an important role in approval decisions.
+        Employment status showed meaningful predictive value, suggesting that employment stability mattered in approval decisions.
       </p>
     </div>
 
-    <div class="card">
-      <h3>Income Needed Transformation</h3>
+    <div class="card metric">
+      <h3>0.41</h3>
       <p>
-        Income showed strong right-skewness, meaning transformation or nonlinear modeling approaches were needed before relying on it as a clean predictor.
+        Credit score was a strong financial predictor and helped separate approved and denied applicants.
       </p>
     </div>
 
-    <div class="card">
-      <h3>Demographics Required Caution</h3>
+    <div class="card metric">
+      <h3>4</h3>
       <p>
-        Demographic variables showed some predictive signal, but financial and credit-history variables provided stronger and more interpretable business value.
+        Prior Default, Employed, Credit Score, and Years Employed were selected as the strongest model inputs.
       </p>
     </div>
   </div>
@@ -120,92 +144,165 @@
 
   <div class="project-grid">
     <div class="card">
-      <h3>Target Variable Analysis</h3>
-      <img src="credit-card-assets/approval-distribution.png" alt="Credit card approval distribution slide">
+      <h3>Dataset Overview</h3>
+      <img src="credit-card-assets/dataset-overview.png" alt="Dataset overview slide">
     </div>
 
     <div class="card">
-      <h3>Distribution Analysis</h3>
-      <img src="credit-card-assets/income-age-distribution.png" alt="Income and age distribution analysis slide">
+      <h3>EDA Findings</h3>
+      <img src="credit-card-assets/eda-insights.png" alt="EDA insights slide">
     </div>
 
     <div class="card">
-      <h3>Correlation Analysis</h3>
-      <img src="credit-card-assets/correlation-analysis.png" alt="Correlation analysis slide">
+      <h3>Data Preparation</h3>
+      <img src="credit-card-assets/data-preparation.png" alt="Data preparation slide">
     </div>
 
     <div class="card">
-      <h3>Prior Default Segmentation</h3>
-      <img src="credit-card-assets/prior-default-segmentation.png" alt="Prior default segmentation slide">
+      <h3>Modeling Approach</h3>
+      <img src="credit-card-assets/modeling-approach.png" alt="Modeling approach slide">
+    </div>
+
+    <div class="card">
+      <h3>Model Performance</h3>
+      <img src="credit-card-assets/model-performance.png" alt="Model performance slide">
+    </div>
+
+    <div class="card">
+      <h3>Bias Analysis</h3>
+      <img src="credit-card-assets/bias-analysis.png" alt="Bias analysis slide">
     </div>
   </div>
 </section>
 
 <section>
   <p class="section-label">Modeling</p>
-  <h2>From Analysis to Prediction</h2>
+  <h2>Modeling Approach</h2>
+
+  <div class="experience">
+    <p>
+      The dataset was split into 80% training and 20% testing using a stratified split. Multiple classification models were evaluated, including Logistic Regression, LASSO, Random Forest, Gradient Boosting, Naive Bayes, and Support Vector Machines.
+    </p>
+
+    <p>
+      Because the goal was to reduce missed approvals, the models were optimized using the Fβ score with β = 2. This placed greater emphasis on recall while still accounting for overall predictive quality.
+    </p>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Model Results</p>
+  <h2>End Result: Random Forest Performed Best</h2>
+
+  <div class="project-grid">
+    <div class="card metric">
+      <h3>0.95</h3>
+      <p>Random Forest achieved the highest test Fβ score.</p>
+    </div>
+
+    <div class="card metric">
+      <h3>1.00</h3>
+      <p>Random Forest achieved perfect recall on the test set.</p>
+    </div>
+
+    <div class="card metric">
+      <h3>0.93</h3>
+      <p>Gradient Boosting delivered the second-best Fβ score.</p>
+    </div>
+
+    <div class="card metric">
+      <h3>0.92</h3>
+      <p>LASSO provided strong performance with better interpretability.</p>
+    </div>
+  </div>
+
+  <div class="experience">
+    <p>
+      The final recommendation was to use Random Forest as the best predictive model because it captured nonlinear relationships and minimized missed approvals. LASSO Regression was recommended as a complementary interpretable model because it made the key drivers easier to explain to business stakeholders.
+    </p>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Business Insights</p>
+  <h2>What the Model Found</h2>
 
   <div class="project-grid">
     <div class="card">
-      <h3>Feature Preparation</h3>
+      <h3>Positive Approval Drivers</h3>
       <p>
-        Reviewed skewed variables, zero-heavy credit score patterns, and redundant predictors before modeling to reduce noise and improve interpretability.
+        Higher credit score, higher income, employment status, years employed, existing bank customer status, and debt-credit interactions were associated with stronger approval likelihood.
       </p>
     </div>
 
     <div class="card">
-      <h3>Classification Strategy</h3>
+      <h3>Negative Approval Drivers</h3>
       <p>
-        Evaluated approval prediction as a classification problem, where the model needed to distinguish approved and denied applicants while accounting for class distribution.
+        Prior default history was the strongest negative predictor, reinforcing the importance of historical credit behavior in approval decisions.
       </p>
     </div>
 
     <div class="card">
-      <h3>Interpretability Tradeoff</h3>
+      <h3>Modeling Tradeoff</h3>
       <p>
-        Compared modeling approaches with the goal of balancing predictive performance against the ability to explain approval drivers to business stakeholders.
+        Random Forest produced the strongest predictive performance, while LASSO offered clearer coefficient-level interpretation.
       </p>
     </div>
 
     <div class="card">
-      <h3>Segmentation Logic</h3>
+      <h3>Fairness Consideration</h3>
       <p>
-        Used credit history, employment stability, and financial risk indicators to identify applicant groups with different approval likelihoods.
+        Approval rates varied across ethnicity and industry groups, showing the importance of monitoring model outputs for potential bias.
       </p>
     </div>
   </div>
 </section>
 
 <section>
-  <p class="section-label">Business Value</p>
-  <h2>Key Takeaways</h2>
+  <p class="section-label">Bias Analysis</p>
+  <h2>Why Prediction Alone Was Not Enough</h2>
+
+  <div class="experience">
+    <p>
+      The project also examined approval differences across demographic and industry groups. Latino applicants showed a 14% approval rate compared with 42% to 63% for non-Latino applicants, despite similar debt profiles.
+    </p>
+
+    <p>
+      Healthcare applicants showed an approval rate of roughly 13% despite having the lowest prior default risk in the dataset. These patterns showed that strong model performance should be paired with fairness monitoring and business review before deployment.
+    </p>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Conclusion</p>
+  <h2>Final Recommendation</h2>
 
   <div class="project-grid">
     <div class="card">
-      <h3>Risk-Based Decision Support</h3>
+      <h3>Use Random Forest for Prediction</h3>
       <p>
-        The analysis helped identify which applicant characteristics were most useful for separating lower-risk and higher-risk approval profiles.
+        Best option when the priority is predictive performance and minimizing missed approvals.
       </p>
     </div>
 
     <div class="card">
-      <h3>Better Model Inputs</h3>
+      <h3>Use LASSO for Explainability</h3>
       <p>
-        Data quality checks and feature analysis helped determine which variables required transformation, removal, or deeper review before modeling.
+        Best option when stakeholders need clearer explanations of approval drivers.
       </p>
     </div>
 
     <div class="card">
-      <h3>Actionable Segmentation</h3>
+      <h3>Prioritize Financial Stability</h3>
       <p>
-        Prior default history, employment stability, and credit score patterns provided practical segmentation logic for applicant evaluation.
+        Credit score, prior default, employment status, income, and years employed were more useful than most demographic variables.
       </p>
     </div>
 
     <div class="card">
-      <h3>Business-Friendly Modeling</h3>
+      <h3>Monitor Fairness</h3>
       <p>
-        The project emphasized not just model accuracy, but whether results could be interpreted and used in real approval strategy discussions.
+        Approval differences across demographic and industry groups should be reviewed before model deployment.
       </p>
     </div>
   </div>
@@ -220,11 +317,14 @@
     <span>Pandas</span>
     <span>NumPy</span>
     <span>Scikit-Learn</span>
+    <span>Logistic Regression</span>
+    <span>LASSO</span>
+    <span>Random Forest</span>
+    <span>Gradient Boosting</span>
+    <span>SVM</span>
     <span>Classification Modeling</span>
     <span>EDA</span>
     <span>Feature Engineering</span>
-    <span>Statistical Analysis</span>
-    <span>Data Visualization</span>
   </div>
 </section>
 
