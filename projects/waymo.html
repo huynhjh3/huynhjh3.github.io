@@ -12,42 +12,224 @@
 
 <header class="hero">
     <div class="hero-content">
-
         <p class="badge">Causal Inference Case Study</p>
 
         <h1>Waymo Safety Impact Analysis</h1>
 
-        <h2>Difference-in-Differences | Causal Inference | Python</h2>
+        <h2>Difference-in-Differences | Urban Safety | Python</h2>
 
         <p>
-            Evaluated whether Waymo autonomous vehicle expansion was associated with measurable changes in city-level crash outcomes using Difference-in-Differences analysis.
+            Evaluated whether Waymo autonomous vehicle expansion was associated with measurable changes in city-level crash outcomes across California cities.
         </p>
 
         <div class="buttons">
             <a href="../index.html">Back to Portfolio</a>
 
-            <a href="https://github.com/huynhjh3/BANA290---Waymo"
-               target="_blank">
-               View GitHub
+            <a href="https://github.com/huynhjh3/BANA290---Waymo" target="_blank">
+                View GitHub
             </a>
         </div>
-
     </div>
 </header>
 
 <section>
     <p class="section-label">Business Question</p>
-
     <h2>Can Autonomous Vehicles Improve Urban Road Safety?</h2>
 
     <div class="experience">
         <p>
-            As autonomous vehicle deployments expand across major U.S. cities, policymakers and transportation agencies face an important question: do autonomous vehicles meaningfully improve roadway safety outcomes?
+            Autonomous vehicle technology is often positioned as a way to reduce human driving error and improve road safety. However, city-level safety outcomes are influenced by many factors, including traffic volume, tourism, enforcement, infrastructure, and local driving behavior.
         </p>
 
         <p>
-            This project evaluated whether Waymo expansion into San Francisco and Los Angeles was associated with measurable changes in crash rates compared to similar California cities.
+            This project used California crash data to evaluate whether Waymo expansion was associated with measurable changes in crash rates in treatment cities compared to similar control cities.
         </p>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Methodology</p>
+    <h2>Difference-in-Differences Framework</h2>
+
+    <div class="project-grid">
+        <div class="card">
+            <h3>Treatment Cities</h3>
+            <p>
+                San Francisco and Los Angeles were treated as cities where Waymo expansion occurred.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Control Cities</h3>
+            <p>
+                Oakland and San Diego were used as comparison cities to help isolate broader crash trends.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Outcome Measures</h3>
+            <p>
+                Total crashes, injury crashes, night crashes, and weekend-night crashes were measured on a monthly basis.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Rate Normalization</h3>
+            <p>
+                Crash outcomes were converted into rates per 100,000 residents to make cities more comparable.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Visual Analysis</p>
+    <h2>San Francisco vs Oakland</h2>
+
+    <div class="project-grid">
+        <div class="card">
+            <h3>Total Crashes per 100k</h3>
+            <img src="waymo-assets/crashes_per_100k (1).png" alt="San Francisco vs Oakland total crashes per 100k">
+        </div>
+
+        <div class="card">
+            <h3>Injury Crashes per 100k</h3>
+            <img src="waymo-assets/injury_crashes_per_100k (1).png" alt="San Francisco vs Oakland injury crashes per 100k">
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Visual Analysis</p>
+    <h2>Los Angeles vs San Diego</h2>
+
+    <div class="project-grid">
+        <div class="card">
+            <h3>Total Crashes per 100k</h3>
+            <img src="waymo-assets/crashes_per_100k.png" alt="Los Angeles vs San Diego total crashes per 100k">
+        </div>
+
+        <div class="card">
+            <h3>Injury Crashes per 100k</h3>
+            <img src="waymo-assets/injury_crashes_per_100k.png" alt="Los Angeles vs San Diego injury crashes per 100k">
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Model Validation</p>
+    <h2>Parallel Trends Check</h2>
+
+    <div class="experience">
+        <p>
+            Before estimating the treatment effect, I evaluated whether treatment and control cities followed similar pre-treatment trends. This step is important because Difference-in-Differences relies on the assumption that the treatment and control groups would have moved similarly without the intervention.
+        </p>
+
+        <p>
+            For the San Francisco vs Oakland comparison, the pre-trend interaction term was not statistically significant, suggesting that the two cities followed reasonably similar crash-rate trajectories before the post-period.
+        </p>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Difference-in-Differences Results</p>
+    <h2>Key Statistical Findings</h2>
+
+    <div class="project-grid">
+        <div class="card metric">
+            <h3>0.79</h3>
+            <p>
+                Estimated change in Los Angeles crashes per 100k after Waymo expansion relative to San Diego.
+            </p>
+        </div>
+
+        <div class="card metric">
+            <h3>0.546</h3>
+            <p>
+                DID p-value for the LA vs San Diego total crash model, meaning the estimate was not statistically significant.
+            </p>
+        </div>
+
+        <div class="card metric">
+            <h3>48</h3>
+            <p>
+                Monthly city-level observations used in the Los Angeles vs San Diego DID model.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Key Findings</p>
+    <h2>What the Analysis Revealed</h2>
+
+    <div class="project-grid">
+        <div class="card">
+            <h3>No Statistically Significant Safety Effect</h3>
+            <p>
+                The analysis did not find strong statistical evidence that Waymo expansion reduced overall crash rates during the study period.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Trends Were More Nuanced Than Expected</h3>
+            <p>
+                Some cities showed stable patterns while others fluctuated month to month, making it difficult to attribute changes solely to autonomous vehicle deployment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>External Conditions Matter</h3>
+            <p>
+                Crash outcomes are influenced by traffic volume, commuting patterns, tourism, enforcement, infrastructure, and broader mobility trends.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Interpretation</p>
+    <h2>What This Means</h2>
+
+    <div class="experience">
+        <p>
+            The results suggest that Waymo expansion did not produce an immediate, statistically significant reduction in total crash rates at the city level during the study period.
+        </p>
+
+        <p>
+            This does not mean autonomous vehicles have no safety benefit. Instead, it means that city-level crash data may not show a clear short-term effect because crash outcomes are affected by many overlapping factors. A more granular analysis using vehicle miles traveled, route-level exposure, incident severity, and autonomous vehicle operating zones would be needed for stronger causal conclusions.
+        </p>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Business & Policy Value</p>
+    <h2>Why This Project Matters</h2>
+
+    <div class="experience">
+        <p>
+            This project demonstrates how causal inference can be used to evaluate emerging technologies when randomized experiments are not available.
+        </p>
+
+        <p>
+            The same framework can be applied to transportation pilots, public policy rollouts, operational changes, pricing experiments, and business interventions where analysts need to compare outcomes before and after implementation.
+        </p>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Tools Used</p>
+    <h2>Technical Toolkit</h2>
+
+    <div class="skills">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>Statsmodels</span>
+        <span>Difference-in-Differences</span>
+        <span>OLS Regression</span>
+        <span>Causal Inference</span>
+        <span>Data Visualization</span>
+        <span>Transportation Analytics</span>
     </div>
 </section>
 
