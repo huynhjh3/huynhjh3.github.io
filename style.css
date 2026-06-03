@@ -571,3 +571,48 @@ footer {
 #waymo-page .card:hover {
     border-top-color: #0f172a;
 }
+/* AIRBNB CASE STUDY VISUAL POLISH */
+
+#airbnb-page section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+#airbnb-page .project-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    gap: 22px;
+}
+
+#airbnb-page .card {
+    border-top: 5px solid #ef4444;
+    min-height: 260px;
+}
+
+#airbnb-page .metric h3 {
+    font-size: 38px;
+    line-height: 1.2;
+    color: #dc2626;
+}
+
+#airbnb-page .metric p {
+    font-size: 16px;
+}
+
+#airbnb-page .experience {
+    border-left: 6px solid #ef4444;
+    max-width: 850px;
+}
+
+#airbnb-page .section-label {
+    color: #dc2626;
+    margin-bottom: 6px;
+}
+
+#airbnb-page section h2 {
+    margin-bottom: 28px;
+}
+
+#airbnb-page .card:hover {
+    border-top-color: #0f172a;
+}
