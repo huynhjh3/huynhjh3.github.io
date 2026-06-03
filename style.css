@@ -425,3 +425,16 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+.value-card {
+    height: 100%;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+}
