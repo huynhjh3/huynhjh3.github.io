@@ -235,7 +235,28 @@ section h2 {
 .card-link span {
     text-decoration: none;
 }
+/* DASHBOARD IMAGES */
 
+.card img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 260px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 18px auto 0 auto !important;
+    border-radius: 12px !important;
+}
+
+section:has(img) .project-grid {
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section:has(img) .card {
+    min-height: 390px;
+    overflow: hidden;
+}
 /* EXPERIENCE + SKILLS */
 
 .experience,
