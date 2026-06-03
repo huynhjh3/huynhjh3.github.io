@@ -296,6 +296,7 @@ footer {
     text-align: center;
     padding: 32px;
 }
+
 .project-type {
     display: block;
     margin: -30px -30px 20px -30px;
@@ -309,6 +310,7 @@ footer {
     background: #0f172a;
     color: white;
 }
+
 /* MOBILE */
 
 @media (max-width: 900px) {
