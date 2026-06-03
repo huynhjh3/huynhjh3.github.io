@@ -13,10 +13,10 @@
   <div class="hero-content">
     <p class="badge">Trade Area Analytics Case Study</p>
     <h1>Alteryx Trade Area Analysis</h1>
-    <h2>Customer Segmentation | Location Strategy</h2>
+    <h2>Mobile Pet Grooming | ArcGIS | Alteryx | Customer Segmentation</h2>
     <p>
-      Built an Alteryx and ArcGIS workflow to identify high-value customer segments,
-      evaluate trade areas, and recommend where a mobile pet grooming business should focus marketing and service coverage.
+      Built a micromarketing workflow to identify high-value customers and priority trade areas
+      for a premium mobile pet grooming and veterinary service.
     </p>
 
     <div class="buttons">
@@ -27,193 +27,254 @@
 
 <section>
   <p class="section-label">Business Problem</p>
-  <h2>Finding High-Value Customers for Mobile Pet Grooming</h2>
+  <h2>Finding the Best Customers for a Mobile Pet Grooming Business</h2>
 
   <div class="experience">
     <p>
-      A mobile pet grooming business depends on reaching customers who are willing to pay for convenience,
-      premium pet care, and recurring at-home service. The challenge is that not every pet-owning area is equally valuable.
-      The strongest markets are usually neighborhoods with the right combination of income, lifestyle, pet ownership,
-      service demand, and geographic accessibility.
+      A mobile pet grooming business does not succeed by targeting every pet owner equally.
+      The strongest customers are more likely to value convenience, premium care, recurring service,
+      and time-saving at-home appointments.
     </p>
 
     <p>
-      This project used Alteryx and ArcGIS to evaluate potential trade areas and identify customer segments most likely
-      to match the business model. Instead of marketing broadly across every nearby ZIP code, the goal was to prioritize
-      areas where the business would have the highest chance of attracting repeat, high-value customers.
+      The purpose of this project was to use geographic, demographic, spending, and lifestyle data
+      to identify where those high-value customers are concentrated and which trade areas should be
+      prioritized for marketing and service coverage.
     </p>
   </div>
 </section>
 
 <section>
-  <p class="section-label">Analytical Objective</p>
-  <h2>What the Analysis Needed to Answer</h2>
+  <p class="section-label">Project Scope</p>
+  <h2>From Market Screening to Trade Area Recommendation</h2>
 
   <div class="project-grid">
     <div class="card">
-      <h3>Who Are the Best Customers?</h3>
+      <h3>1. Screen Markets</h3>
       <p>
-        Identify customer segments most likely to value premium mobile pet grooming based on income, lifestyle,
-        household profile, and service preferences.
+        Started by narrowing the target market using sociodemographic and spending variables
+        related to income and pet service demand.
       </p>
     </div>
 
     <div class="card">
-      <h3>Where Are They Located?</h3>
+      <h3>2. Select Target County</h3>
       <p>
-        Use geographic analysis to understand where high-potential customers are concentrated and which areas
-        are realistic for mobile service coverage.
+        Compared counties using high-income household concentration and pet services spending
+        to identify the strongest geographic market.
       </p>
     </div>
 
     <div class="card">
-      <h3>Which Trade Areas Matter Most?</h3>
+      <h3>3. Build Trade Areas</h3>
       <p>
-        Compare markets based on customer concentration, demographic fit, demand potential, and accessibility.
+        Used ArcGIS to create geographic trade areas around potential service hubs and evaluate
+        their market potential.
       </p>
     </div>
 
     <div class="card">
-      <h3>Where Should the Business Focus?</h3>
+      <h3>4. Identify Best Segments</h3>
       <p>
-        Translate the workflow into a practical targeting recommendation for marketing, routing, and expansion strategy.
+        Used Tapestry lifestyle segmentation to understand the customer groups most aligned
+        with premium mobile pet grooming.
       </p>
     </div>
   </div>
 </section>
 
 <section>
-  <p class="section-label">Workflow Reasoning</p>
-  <h2>Why Alteryx and ArcGIS Were Used Together</h2>
+  <p class="section-label">Data Foundation</p>
+  <h2>What Data Was Used</h2>
+
+  <div class="project-grid">
+    <div class="card">
+      <h3>Income Variables</h3>
+      <p>
+        High-income household counts and percentages were used to identify areas with stronger
+        ability to pay for premium recurring services.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Pet Spending</h3>
+      <p>
+        Average pet services spending was used as a demand signal for grooming, veterinary,
+        and pet-care related services.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Geographic Boundaries</h3>
+      <p>
+        ArcGIS was used to analyze ZIP codes, counties, block groups, and trade areas so the
+        recommendation was tied to real service coverage.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Tapestry Segments</h3>
+      <p>
+        Lifestyle segmentation was used to identify customer groups with premium service behavior,
+        urban convenience needs, and stronger spending potential.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">ArcGIS Workflow</p>
+  <h2>How ArcGIS Supported the Analysis</h2>
 
   <div class="experience">
     <p>
-      Alteryx was used to clean, combine, filter, and score the data. This made it easier to create a repeatable workflow
-      that could process customer, demographic, and geographic inputs without manually rebuilding the analysis each time.
+      ArcGIS was used to enrich geographic areas with demographic, spending, and lifestyle data.
+      The workflow moved from larger geographies into more precise trade areas, allowing the analysis
+      to become increasingly targeted.
     </p>
 
     <p>
-      ArcGIS was used to interpret the spatial side of the problem. Since mobile pet grooming depends on where customers live,
-      the analysis needed more than spreadsheet summaries. Mapping helped evaluate service areas, customer concentration,
-      neighborhood patterns, and trade area boundaries.
-    </p>
-
-    <p>
-      Together, the tools supported both sides of the decision: Alteryx handled the data workflow, while ArcGIS helped translate
-      that data into location strategy.
+      I used ArcGIS to evaluate ZIP-level and county-level opportunity, create block group layers,
+      enrich those areas with demographic and spending variables, and map customer lifestyle segments.
+      This helped translate market data into a location-based service strategy.
     </p>
   </div>
 </section>
 
 <section>
   <p class="section-label">Alteryx Workflow</p>
-  <h2>How the Workflow Was Built</h2>
+  <h2>How Alteryx Turned Raw Data Into Decisions</h2>
 
   <div class="project-grid">
     <div class="card">
-      <h3>1. Data Input</h3>
+      <h3>Data Cleaning</h3>
       <p>
-        Imported customer, demographic, and location-based data into Alteryx. The goal was to bring separate data sources
-        into one workflow so they could be evaluated consistently.
+        Imported enriched ArcGIS outputs into Alteryx, cleaned fields, removed invalid observations,
+        and prepared the data for aggregation and ranking.
       </p>
     </div>
 
     <div class="card">
-      <h3>2. Data Cleaning</h3>
+      <h3>County Aggregation</h3>
       <p>
-        Standardized fields, removed irrelevant records, checked formatting issues, and prepared the data for segmentation
-        and geographic analysis.
+        Used the Summarize tool to group ZIP-level data by county and calculate total high-income
+        households, average high-income percentage, and average pet spending.
       </p>
     </div>
 
     <div class="card">
-      <h3>3. Customer Segmentation</h3>
+      <h3>Trade Area Scoring</h3>
       <p>
-        Grouped customers and market areas based on characteristics connected to mobile pet grooming demand, such as income,
-        lifestyle fit, household profile, and premium service potential.
+        Compared market areas based on customer quality, spending potential, geographic fit,
+        and service opportunity.
       </p>
     </div>
 
     <div class="card">
-      <h3>4. Trade Area Scoring</h3>
+      <h3>Segment Ranking</h3>
       <p>
-        Compared geographic areas using segment fit, market opportunity, and customer concentration to identify priority
-        trade areas for outreach and service planning.
+        Transposed and ranked Tapestry lifestyle segment data to identify which customer groups
+        dominated the strongest trade area.
       </p>
     </div>
   </div>
 </section>
 
 <section>
-  <p class="section-label">ArcGIS Analysis</p>
-  <h2>How Mapping Supported the Recommendation</h2>
+  <p class="section-label">Market Selection</p>
+  <h2>Why Middlesex County Was Selected</h2>
 
   <div class="project-grid">
-    <div class="card">
-      <h3>Customer Concentration</h3>
+    <div class="card metric">
+      <h3>156K</h3>
       <p>
-        Mapped where high-value customer segments were clustered instead of relying only on raw counts or broad ZIP-level summaries.
+        High-income households identified in Middlesex County.
       </p>
     </div>
 
-    <div class="card">
-      <h3>Service Coverage</h3>
+    <div class="card metric">
+      <h3>27.5%</h3>
       <p>
-        Evaluated which areas were realistic for a mobile business to serve efficiently based on geography and route practicality.
+        Average percentage of high-income households.
       </p>
     </div>
 
-    <div class="card">
-      <h3>Market Fit</h3>
+    <div class="card metric">
+      <h3>228.7</h3>
       <p>
-        Compared neighborhoods based on whether the local customer profile matched the expected demand for premium pet grooming.
+        Average pet services spending score.
       </p>
     </div>
 
-    <div class="card">
-      <h3>Expansion Prioritization</h3>
+    <div class="card metric">
+      <h3>81</h3>
       <p>
-        Helped identify which areas should be targeted first before expanding into lower-fit or less concentrated markets.
+        ZIP codes, giving flexibility to identify more specific trade areas.
+      </p>
+    </div>
+  </div>
+
+  <div class="experience">
+    <p>
+      Middlesex County was selected because it combined market size, income concentration,
+      and pet spending potential. This made it a strong county-level target before narrowing
+      into specific trade areas and lifestyle segments.
+    </p>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Lifestyle Segmentation</p>
+  <h2>Who the High-Value Customers Were</h2>
+
+  <div class="project-grid">
+    <div class="card metric">
+      <h3>33.3%</h3>
+      <p>
+        D5 Laptops and Lattes was the dominant lifestyle segment in the successful trade area.
+      </p>
+    </div>
+
+    <div class="card metric">
+      <h3>16.8%</h3>
+      <p>
+        D4 Metro Renters represented another major urban customer segment.
+      </p>
+    </div>
+
+    <div class="card metric">
+      <h3>15.4%</h3>
+      <p>
+        D2 Trendsetters showed strong alignment with premium lifestyle behavior.
+      </p>
+    </div>
+
+    <div class="card metric">
+      <h3>8.3%</h3>
+      <p>
+        F5 Uptown Lights added another meaningful urban lifestyle segment.
       </p>
     </div>
   </div>
 </section>
 
 <section>
-  <p class="section-label">Key Findings</p>
-  <h2>What the Analysis Revealed</h2>
+  <p class="section-label">Key Insight</p>
+  <h2>The Best Market Was About Lifestyle Fit, Not Just Income</h2>
 
-  <div class="project-grid">
-    <div class="card">
-      <h3>High-Income Areas Were Not Enough</h3>
-      <p>
-        Income mattered, but the strongest trade areas also needed lifestyle fit, pet ownership potential, and convenience-driven demand.
-      </p>
-    </div>
+  <div class="experience">
+    <p>
+      The strongest trade area was not selected only because it had high-income households.
+      It was strong because the dominant lifestyle segments aligned with the business model:
+      younger, highly educated, urban professionals with strong purchasing power and convenience-oriented lifestyles.
+    </p>
 
-    <div class="card">
-      <h3>Customer Segments Changed the Strategy</h3>
-      <p>
-        Segment analysis helped separate attractive markets from areas that looked strong demographically but were less aligned
-        with mobile grooming behavior.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Geography Affected Profitability</h3>
-      <p>
-        Because the business travels to customers, distance and service coverage mattered. A strong customer area was less useful
-        if it created inefficient routing.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Targeting Beat Broad Marketing</h3>
-      <p>
-        The analysis supported a more focused strategy: prioritize the best-fit trade areas first instead of spending marketing
-        budget evenly across all nearby neighborhoods.
-      </p>
-    </div>
+    <p>
+      The D5 Laptops and Lattes segment was especially important because these households tend to live in dense
+      metropolitan areas, have high incomes and home values, and spend on premium services. That profile fits
+      a mobile pet grooming and veterinary service because the value proposition is convenience, quality,
+      and time savings.
+    </p>
   </div>
 </section>
 
@@ -221,23 +282,37 @@
   <p class="section-label">Business Recommendation</p>
   <h2>Recommended Targeting Strategy</h2>
 
-  <div class="experience">
-    <p>
-      The final recommendation was to focus marketing and service coverage on trade areas with stronger concentrations of
-      high-value customer segments. These areas offered a better combination of income, lifestyle fit, pet-care demand, and
-      realistic mobile service access.
-    </p>
+  <div class="project-grid">
+    <div class="card">
+      <h3>Prioritize High-Fit Urban Areas</h3>
+      <p>
+        Focus on dense, high-income urban neighborhoods where customers are more likely to pay for convenience
+        and recurring premium pet care.
+      </p>
+    </div>
 
-    <p>
-      For the mobile pet grooming business, this meant prioritizing neighborhoods where customers were more likely to value
-      convenience and recurring premium service. The workflow also helped avoid wasting resources on broad areas that may have
-      had population density but weaker customer fit.
-    </p>
+    <div class="card">
+      <h3>Target Lifestyle Segments</h3>
+      <p>
+        Use segments like Laptops and Lattes, Metro Renters, and Trendsetters to guide messaging,
+        promotional strategy, and local outreach.
+      </p>
+    </div>
 
-    <p>
-      From a business perspective, the project turned market data into a practical decision framework for customer targeting,
-      route planning, promotional focus, and future expansion.
-    </p>
+    <div class="card">
+      <h3>Improve Route Efficiency</h3>
+      <p>
+        Prioritize areas with concentrated demand so the mobile service model can reduce drive time
+        and increase appointment density.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Expand Using the Same Framework</h3>
+      <p>
+        Reuse the ArcGIS and Alteryx workflow to evaluate new ZIP codes, new hubs, and future expansion markets.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -245,34 +320,18 @@
   <p class="section-label">Business Value</p>
   <h2>Why This Project Matters</h2>
 
-  <div class="project-grid">
-    <div class="card">
-      <h3>Smarter Marketing</h3>
-      <p>
-        Helps the business focus advertising on neighborhoods most likely to generate high-value leads and repeat customers.
-      </p>
-    </div>
+  <div class="experience">
+    <p>
+      This project turned micromarketing data into a practical growth strategy. Instead of guessing where to advertise
+      or where to offer service coverage, the workflow created a data-driven way to identify high-value neighborhoods,
+      understand customer lifestyles, and prioritize trade areas.
+    </p>
 
-    <div class="card">
-      <h3>Better Route Efficiency</h3>
-      <p>
-        Supports service area planning by identifying concentrated demand zones that reduce unnecessary travel time.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Stronger Customer Targeting</h3>
-      <p>
-        Uses segmentation to identify customers more likely to value premium, convenient, recurring pet grooming services.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Repeatable Market Analysis</h3>
-      <p>
-        Creates a workflow that could be reused when evaluating new neighborhoods, cities, or expansion markets.
-      </p>
-    </div>
+    <p>
+      For a mobile service business, this matters because marketing and routing decisions directly affect profitability.
+      The best trade area is not just where many people live; it is where the right customers live close enough together
+      to support repeat bookings and efficient service delivery.
+    </p>
   </div>
 </section>
 
@@ -282,13 +341,15 @@
 
   <div class="skills">
     <span>Alteryx</span>
-    <span>ArcGIS</span>
+    <span>ArcGIS Pro</span>
     <span>Trade Area Analysis</span>
+    <span>Tapestry Segmentation</span>
     <span>Customer Segmentation</span>
     <span>Geographic Analytics</span>
-    <span>Market Analysis</span>
-    <span>Spatial Reasoning</span>
-    <span>Business Recommendations</span>
+    <span>Data Cleaning</span>
+    <span>Summarize Tool</span>
+    <span>Transpose Tool</span>
+    <span>Market Scoring</span>
   </div>
 </section>
 
