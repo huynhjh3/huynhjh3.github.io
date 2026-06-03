@@ -616,3 +616,9 @@ footer {
 #airbnb-page .card:hover {
     border-top-color: #0f172a;
 }
+#airbnb-page .card img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin: 15px 0;
+}
