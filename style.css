@@ -432,3 +432,48 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* CREDIT CARD CASE STUDY VISUAL POLISH */
+
+#credit-card-page section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+#credit-card-page .project-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    gap: 22px;
+}
+
+#credit-card-page .card {
+    border-top: 5px solid #14b8a6;
+    min-height: 260px;
+}
+
+#credit-card-page .metric h3 {
+    font-size: 38px;
+    line-height: 1.2;
+    color: #0f766e;
+}
+
+#credit-card-page .metric p {
+    font-size: 16px;
+}
+
+#credit-card-page .experience {
+    border-left: 6px solid #14b8a6;
+    max-width: 850px;
+}
+
+#credit-card-page .section-label {
+    color: #0f766e;
+    margin-bottom: 6px;
+}
+
+#credit-card-page section h2 {
+    margin-bottom: 28px;
+}
+
+#credit-card-page .card:hover {
+    border-top-color: #0f172a;
+}
