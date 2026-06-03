@@ -297,16 +297,17 @@ footer {
     padding: 32px;
 }
 .project-type {
-    display: inline-block;
-    background: #dbeafe;
-    color: #1d4ed8;
-    padding: 6px 12px;
-    border-radius: 999px;
+    display: block;
+    margin: -30px -30px 20px -30px;
+    padding: 14px;
+    text-align: center;
     font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    border-radius: 18px 18px 0 0;
+    background: #0f172a;
+    color: white;
 }
 /* MOBILE */
 
