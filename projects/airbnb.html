@@ -1,5 +1,260 @@
-<a href="https://github.com/huynhjh3/airbnb-ratings-analysis"
-   target="_blank"
-   class="btn">
-   View GitHub
-</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Ratings Analysis | Justin Huynh</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body id="airbnb-page">
+
+<header class="hero">
+    <div class="hero-content">
+        <p class="badge">Machine Learning Case Study</p>
+
+        <h1>Airbnb Ratings Analysis</h1>
+
+        <h2>Predictive Modeling | Guest Ratings | Python & Tableau</h2>
+
+        <p>
+            Analyzed 40,000+ Los Angeles Airbnb listings and built predictive models to identify the strongest drivers of high guest ratings.
+        </p>
+
+        <div class="buttons">
+            <a href="../index.html">Back to Portfolio</a>
+
+            <a href="https://github.com/huynhjh3/airbnb-ratings-analysis" target="_blank">
+                View GitHub
+            </a>
+        </div>
+    </div>
+</header>
+
+<section>
+    <p class="section-label">Business Question</p>
+    <h2>What Drives High Airbnb Ratings?</h2>
+
+    <div class="experience">
+        <p>
+            Airbnb ratings are a key signal of trust, quality, and guest satisfaction. For hosts, stronger ratings can improve listing visibility, booking confidence, and long-term competitiveness.
+        </p>
+
+        <p>
+            This project analyzed Los Angeles Airbnb listings to identify which amenities, host characteristics, property types, and listing attributes were most associated with higher guest ratings.
+        </p>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Data Overview</p>
+    <h2>Preparing Airbnb Listing Data</h2>
+
+    <div class="project-grid">
+        <div class="card metric">
+            <h3>40,227</h3>
+            <p>Unique Los Angeles Airbnb listings after cleaning and combining datasets.</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Cleaning</h3>
+            <p>
+                Removed duplicates, dropped invalid review records, cleaned price fields, converted date fields, and standardized amenities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Feature Engineering</h3>
+            <p>
+                Created features such as amenities count, host experience years, listing age, Superhost status, availability, and property type indicators.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Exploratory Analysis</p>
+    <h2>Understanding Rating Patterns</h2>
+
+    <div class="project-grid">
+        <div class="card">
+            <h3>Ratings Were Highly Skewed</h3>
+            <p>
+                Most listings were clustered between 4.5 and 5.0 stars, making continuous rating prediction difficult.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Price Was Not Enough</h3>
+            <p>
+                Higher prices did not consistently translate into better ratings, suggesting service quality mattered more than price alone.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Amenities Mattered</h3>
+            <p>
+                Listings with more convenience-focused amenities tended to receive stronger guest ratings.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Modeling Approach</p>
+    <h2>Regression vs Classification</h2>
+
+    <div class="project-grid">
+        <div class="card">
+            <h3>Regression Models</h3>
+            <p>
+                Tested Linear Regression, Ridge, Lasso, Random Forest Regressor, and Gradient Boosting Regressor to predict numerical review scores.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Classification Models</h3>
+            <p>
+                Converted ratings into a binary high-rating outcome where listings with review scores greater than or equal to 4.5 were labeled as high-rated.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Why Classification Worked Better</h3>
+            <p>
+                Because ratings were compressed near the top of the scale, classification provided a more practical way to distinguish stronger listings from lower-rated ones.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Model Results</p>
+    <h2>Best Performing Model</h2>
+
+    <div class="project-grid">
+        <div class="card metric">
+            <h3>80.3%</h3>
+            <p>Accuracy from the Random Forest Classifier.</p>
+        </div>
+
+        <div class="card metric">
+            <h3>0.938</h3>
+            <p>Precision score, showing strong performance when predicting high-rated listings.</p>
+        </div>
+
+        <div class="card metric">
+            <h3>0.792</h3>
+            <p>ROC-AUC score from the Random Forest Classifier.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Key Findings</p>
+    <h2>What the Analysis Revealed</h2>
+
+    <div class="project-grid">
+        <div class="card">
+            <h3>Amenities Were a Major Signal</h3>
+            <p>
+                More amenities were associated with stronger ratings, suggesting guests value convenience and completeness.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Host Quality Mattered</h3>
+            <p>
+                Superhost status, host experience, and host responsiveness were important predictors of stronger listing performance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Property Type Influenced Satisfaction</h3>
+            <p>
+                Entire homes and similar private property types performed better than more limited or shared accommodations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Price Was Not a Guarantee</h3>
+            <p>
+                Pricing alone did not strongly explain high ratings, reinforcing that perceived service quality mattered more than simply charging more.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Business Recommendations</p>
+    <h2>How Hosts Can Improve Listing Performance</h2>
+
+    <div class="project-grid">
+        <div class="card">
+            <h3>Increase Useful Amenities</h3>
+            <p>
+                Add essential and convenience-focused amenities that improve the guest experience.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Improve Host Professionalism</h3>
+            <p>
+                Maintain strong communication, faster response times, and consistent service quality.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Highlight Listing Strengths</h3>
+            <p>
+                Emphasize amenities, property type, host experience, and unique features in the listing presentation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Align Price With Service</h3>
+            <p>
+                Pricing should reflect service quality and guest expectations rather than relying on price as a standalone quality signal.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Limitations</p>
+    <h2>What the Model Could Not Fully Capture</h2>
+
+    <div class="experience">
+        <p>
+            Airbnb ratings were highly compressed between 4.5 and 5.0, which limited the performance of regression models. Public listing data also does not include guest demographics, review text sentiment, or detailed behavioral history.
+        </p>
+
+        <p>
+            As a result, this project is best interpreted as a predictive analysis of observable listing attributes, not a causal explanation of what directly creates higher ratings.
+        </p>
+    </div>
+</section>
+
+<section>
+    <p class="section-label">Tools Used</p>
+    <h2>Technical Toolkit</h2>
+
+    <div class="skills">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>Scikit-Learn</span>
+        <span>Random Forest</span>
+        <span>Classification</span>
+        <span>Regression</span>
+        <span>Tableau</span>
+        <span>EDA</span>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Justin Huynh | Airbnb Ratings Analysis</p>
+</footer>
+
+</body>
+</html>
