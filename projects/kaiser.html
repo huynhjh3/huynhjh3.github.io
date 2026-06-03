@@ -2,73 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kaiser Workforce Planning Analytics | Sanitized Case Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaiser Workforce Planning Analytics | Justin Huynh</title>
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
 
 <header class="hero">
-  <h1>Kaiser Workforce Planning Analytics</h1>
-  <h2>Sanitized Case Study | Capacity Modeling | Forecasting | Staffing Strategy</h2>
-  <p>
-    Confidential client project — this public version uses mock data, generalized team names,
-    and recreated visuals to demonstrate the methodology while protecting sensitive information.
-  </p>
+  <div class="hero-content">
+    <p class="badge">Sanitized Case Study</p>
+
+    <h1>Kaiser Workforce Planning Analytics</h1>
+
+    <h2>Capacity Modeling | Forecasting | Staffing Strategy</h2>
+
+    <p>
+      A confidential client project recreated as a public-safe case study using mock data,
+      generalized team names, and recreated dashboard visuals to demonstrate the methodology
+      while protecting sensitive information.
+    </p>
+
+    <div class="buttons">
+      <a href="https://github.com/huynhjh3/kaiser-sanitized-workforce-planning" target="_blank">View GitHub Repo</a>
+      <a href="../index.html">Back to Portfolio</a>
+    </div>
+  </div>
 </header>
 
 <section>
+  <p class="section-label">Executive Summary</p>
   <h2>Business Problem</h2>
+
   <div class="experience">
     <p>
       Leadership needed a clearer way to evaluate workload distribution, capacity pressure,
       turnaround time, staffing gaps, and future workforce needs during an operating model transition.
+      The goal was to turn operational intake data into a repeatable workforce planning framework.
     </p>
   </div>
 </section>
 
 <section>
+  <p class="section-label">Analytical Workflow</p>
   <h2>Methodology</h2>
+
   <div class="project-grid">
     <div class="card">
-      <h3>1. Data Cleaning</h3>
+      <h3>1. Data Validation</h3>
       <p>Filtered completed intake records, corrected missing or out-of-order timestamps, and standardized lifecycle stages.</p>
     </div>
+
     <div class="card">
-      <h3>2. TAT Feature Engineering</h3>
-      <p>Created assignment, pre-work, execution, closure, and total turnaround time metrics.</p>
+      <h3>2. TAT Engineering</h3>
+      <p>Created assignment, pre-work, execution, closure, and total turnaround time metrics to understand workflow delays.</p>
     </div>
+
     <div class="card">
-      <h3>3. Capacity Analysis</h3>
+      <h3>3. Capacity Modeling</h3>
       <p>Compared forecasted demand against estimated monthly capacity to identify utilization pressure and staffing gaps.</p>
     </div>
+
     <div class="card">
-      <h3>4. Core-Flex Recommendation</h3>
-      <p>Mapped teams into stable core, flexible delivery, and floating pool recommendations based on demand patterns.</p>
+      <h3>4. Core-Flex Strategy</h3>
+      <p>Mapped teams into stable core, flexible delivery, and floating pool recommendations based on demand variability.</p>
     </div>
   </div>
 </section>
 
 <section>
-  <h2>Mock Dashboard Outputs</h2>
+  <p class="section-label">Dashboard Outputs</p>
+  <h2>Mock Dashboard Views</h2>
+
   <div class="project-grid">
-    <div class="card"><h3>Utilization Ratio</h3><img src="../dashboard/01_utilization_ratio.png" style="width:100%; border-radius:10px;"></div>
-    <div class="card"><h3>Capacity Gap</h3><img src="../dashboard/02_capacity_gap.png" style="width:100%; border-radius:10px;"></div>
-    <div class="card"><h3>TAT Stage Medians</h3><img src="../dashboard/03_tat_stage_medians.png" style="width:100%; border-radius:10px;"></div>
-    <div class="card"><h3>Effectiveness Score</h3><img src="../dashboard/04_effectiveness_score.png" style="width:100%; border-radius:10px;"></div>
+    <div class="card">
+      <h3>Utilization Ratio</h3>
+      <img src="../dashboard/01_utilization_ratio.png" style="width:100%; border-radius:12px;">
+    </div>
+
+    <div class="card">
+      <h3>Capacity Gap</h3>
+      <img src="../dashboard/02_capacity_gap.png" style="width:100%; border-radius:12px;">
+    </div>
+
+    <div class="card">
+      <h3>TAT Stage Medians</h3>
+      <img src="../dashboard/03_tat_stage_medians.png" style="width:100%; border-radius:12px;">
+    </div>
+
+    <div class="card">
+      <h3>Effectiveness Score</h3>
+      <img src="../dashboard/04_effectiveness_score.png" style="width:100%; border-radius:12px;">
+    </div>
   </div>
 </section>
 
 <section>
-  <h2>Deliverables</h2>
-  <div class="buttons">
+  <p class="section-label">Business Value</p>
+  <h2>Key Takeaways</h2>
+
+  <div class="project-grid">
+    <div class="card">
+      <h3>Operational Visibility</h3>
+      <p>Improved visibility into workload distribution, team utilization, and operational bottlenecks.</p>
+    </div>
+
+    <div class="card">
+      <h3>Capacity Planning</h3>
+      <p>Identified where forecasted demand exceeded available capacity and where flexible support was needed.</p>
+    </div>
+
+    <div class="card">
+      <h3>Executive Decision Support</h3>
+      <p>Translated complex workforce data into leadership-ready recommendations and monitoring metrics.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Deliverables</p>
+  <h2>Public-Safe Materials</h2>
+
+  <div class="buttons" style="justify-content:center;">
+    <a href="https://github.com/huynhjh3/kaiser-sanitized-workforce-planning" target="_blank">View GitHub Repo</a>
     <a href="../code/sanitized_workforce_planning_v2.py" target="_blank">View Sanitized Code</a>
-    <a href="../data/mock_intake_records.csv" target="_blank">View Mock Intake Data</a>
+    <a href="../data/mock_intake_records.csv" target="_blank">View Mock Data</a>
     <a href="../dashboard/capacity_recommendation_summary.csv" target="_blank">View Recommendation Table</a>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Justin Huynh | Business Analytics Portfolio</p>
+  <p>© 2026 Justin Huynh | Kaiser Workforce Planning Case Study</p>
 </footer>
 
 </body>
