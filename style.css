@@ -205,7 +205,7 @@ section h2 {
     margin-bottom: 18px;
 }
 
-.card span,
+.card span:not(.project-type),
 .skills span {
     display: inline-block;
     background: #dbeafe;
