@@ -284,6 +284,70 @@ section:has(img) .card {
     margin-bottom: 12px;
 }
 
+.role {
+    margin-bottom: 30px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.role:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.role-header h3 {
+    margin-top: 0;
+}
+
+.role-meta {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 14px 0 4px 0;
+}
+
+.stat-chip {
+    display: inline-flex;
+    flex-direction: column;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 8px 14px;
+    min-width: 110px;
+}
+
+.stat-chip .num {
+    color: #1d4ed8;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+.stat-chip .label {
+    color: #475569;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
 .skills {
     text-align: center;
 }
